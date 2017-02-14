@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Search index</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <link href="search_style.css" type="text/css" rel="stylesheet" />
+    <script src="search.js" type="text/javascript"></script>
+</head>
+
+<body>
+<form name="searchform" onsubmit="do_search();return false;">
+<input id="q" name="q"/><button type="submit">Search</button>
+</form>
+
+<div id="some_results">Results:</div>
+<div id="no_results">No results found</div>
+<div id="content">
+<ul>
+<li id="s_0" style="display:none"><a href="index.html" target="vbdocright">Reference</a></li>
+<li id="s_1" style="display:none"><a href="switch1--.html" target="vbdocright">Help TOC</a></li>
+<li id="s_2" style="display:none"><a href="switch2--.html" target="vbdocright">Help Index</a></li>
+<li id="s_3" style="display:none"><a href="switch3--.html" target="vbdocright">Help Index</a></li>
+<li id="s_4" style="display:none"><a href="title--.html" target="vbdocright">Default page</a></li>
+<li id="s_5" style="display:none"><a href="topic_0000000000000000.html" target="vbdocright">byMarc.Net4.MvcControls Namespace</a></li>
+<li id="s_6" style="display:none"><a href="topic_0000000000000000_members--.html" target="vbdocright">byMarc.Net4.MvcControls Members</a></li>
+<li id="s_7" style="display:none"><a href="topic_0000000000000001.html" target="vbdocright">Extensions Class</a></li>
+<li id="s_8" style="display:none"><a href="topic_0000000000000001_attached_props--.html" target="vbdocright">Extensions Attached Properties</a></li>
+<li id="s_9" style="display:none"><a href="topic_0000000000000001_events--.html" target="vbdocright">Extensions Events</a></li>
+<li id="s_10" style="display:none"><a href="topic_0000000000000001_members--.html" target="vbdocright">Extensions Members</a></li>
+<li id="s_11" style="display:none"><a href="topic_0000000000000001_methods--.html" target="vbdocright">Extensions Methods</a></li>
+<li id="s_12" style="display:none"><a href="topic_0000000000000001_props--.html" target="vbdocright">Extensions Properties</a></li>
+<li id="s_13" style="display:none"><a href="topic_0000000000000001_vars--.html" target="vbdocright">Extensions Fields</a></li>
+<li id="s_14" style="display:none"><a href="topic_0000000000000002.html" target="vbdocright">Extensions.DropDownCheckBoxList Method</a></li>
+<li id="s_15" style="display:none"><a href="topic_0000000000000003.html" target="vbdocright">byMarc.Net4.MvcControls.DropDownCheckBoxList Reference </a></li>
+
+</ul>
+</div>
+
+<script type="text/javascript">
+var qterms = [];
+var nurls = 16;
+var index = {'htmlattributes':[14],'body':[1, 2, 3],'this':[0, 7, 14],'true':[1, 2, 3],'the':[1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],'down':[10, 11, 14],'redirectframe':[0],'object':[7, 14],'dll':[5, 7, 14],'name':[5, 6, 10, 11, 14, 15],'vbdocright':[0],'clientheight':[1, 2, 3],'alreadyresizing':[1, 2, 3],'initial':[14],'_public':[14],'example':[7, 14],'composite':[10, 11, 14],'is':[1, 7, 14],'parent':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'hierarchy':[7],'text':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'sp1':[5, 7, 14],'bymarc':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'public':[7, 14],'as':[14],'attributes':[14],'assign':[14],'url':[1],'array':[14],'vista':[5, 7, 14],'exposed':[6, 8, 9, 10, 11, 12, 13],'to':[4, 14],'property':[14],'onhashchange':[0],'from':[10, 11, 14],'no':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'dropdownheight':[14],'location':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'s':[1],'see':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14],'role':[5, 7, 14],'h':[1, 2, 3],'control':[14],'filename':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'a':[5, 7, 10, 11, 14],'c':[7, 14],'current':[14],'g':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'ifrmloaded':[1],'javascript':[14],'ex':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'toc':[1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'extension':[14],'items':[14],'optional':[14],'search':[0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'unregistered':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'blank':[14],'onokclick':[14],'version':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'information':[5, 7, 14],'inheritance':[7],'byval':[14],'8':[5, 7, 14],'available':[7, 14],'index':[1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'0':[1, 5, 7, 14],'1':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'2':[1, 2, 3, 5, 7, 14],'3':[1, 2, 3, 5, 7, 14],'4':[5, 7, 14],'5':[5, 7, 14],'6':[5, 7, 14],'7':[5, 7, 14],'resizebox':[1, 2, 3],'frames':[0, 1],'string':[14],'does':[5, 7, 14],'will':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'false':[1, 2, 3],'selectlistitems':[14],'state':[14],'dropdownwidth':[14],'loaded':[1],'replace':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'in':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'framework':[5, 7, 14],'r2':[5, 7, 14],'used':[14],'supports':[14],'defaulttext':[14],'core':[5, 7, 14],'2012':[5, 7, 14],'static':[7, 14],'parameters':[14],'client':[5, 7, 14],'class':[7, 8, 9, 10, 11, 12, 13, 14],'own':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'determine':[14],'with':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'mvchtmlstring':[14],'write':[0],'footer':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'namespaces':[15],'support':[5, 7, 14],'all':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'function':[0, 1, 2, 3, 14],'page':[0, 4],'2008':[5, 7, 14],'platforms':[5, 7, 14],'syntax':[7, 14],'windows':[5, 7, 14],'window':[0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'it':[1],'versions':[5, 7, 14],'native':[10, 11, 14],'attached':[8],'frameworksupported':[5, 7, 14],'type':[6, 8, 9, 10, 11, 12, 13, 14],'help':[1, 2, 3],'height':[1, 2, 3, 14],'server':[5, 7, 14],'vb':[7, 14],'try':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'var':[1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'box':[1, 2, 3, 14],'schedule':[1],'ref':[7],'lastindexof':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'offsettop':[1, 2, 3],'requirements':[5, 7, 14],'when':[1, 14],'tags':[14],'hash':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'selected':[14],'supported':[5, 7, 14],'htmlhelper':[14],'substring':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'yet':[1],'creates':[10, 11, 14],'selection':[14],'display':[14],'style':[1, 2, 3],'properties':[8, 12],'vsdocmanyour':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'top':[5, 6, 10, 11, 15],'dropdowncheckboxlist':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'net':[5, 7, 14],'expandlinkintoc':[1],'clicked':[14],'platform':[5, 7, 14],'html':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'description':[5, 6, 10, 11, 15],'profilesupported':[5, 7, 14],'members':[6, 7, 8, 9, 10, 11, 12, 13, 14],'execute':[14],'if':[0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'drop':[10, 11, 14],'system':[5, 7, 14],'onload':[1, 2, 3],'else':[0, 1],'of':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'syntaxhighlighter':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'controls':[10, 11, 14],'later':[5, 7, 14],'value':[14],'createframes':[0],'only':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'following':[6, 8, 9, 10, 11, 12, 13, 14],'undefined':[1],'remarks':[14],'code':[7, 14],'every':[5, 7, 14],'fields':[13],'extensions':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14],'operation':[1],'width':[14],'itanium':[5, 7, 14],'requires':[0],'copy':[7, 14],'mvccontrols':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'_':[14],'that':[14],'list':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14],'registered':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'contents':[1, 2, 3],'sp2':[5, 7, 14],'needed':[14],'null':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'replacetitleandurl':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'default':[4],'jscript':[7, 14],'by':[6, 8, 9, 10, 11, 12, 13],'title':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'commands':[14],'namespace':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14],'textbox':[14],'document':[0, 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'method':[14],'assembly':[5, 7, 14],'go':[4],'pathname':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'tables':[6, 8, 9, 10, 11, 12, 13],'ifrm':[1, 2, 3],'return':[1],'getelementbyid':[1, 2, 3],'displays':[14],'events':[9],'not':[1, 5, 7, 14],'phone':[5, 7, 14],'be':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'or':[5, 7, 14],'methods':[10, 11],'main':[1, 2, 3],'also':[6, 7, 8, 9, 10, 11, 12, 13, 14],'iframe':[1, 2, 3],'checkbox':[10, 11, 14],'shared':[14],'onresize':[1, 2, 3],'ok':[14],'additional':[14],'net4':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'catch':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'shown':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'reference':[0, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],'language':[7, 14],'button':[14],'classes':[5, 6],'for':[5, 7, 14],'selectlistitem':[14],'px':[1, 2, 3],'generated':[5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]};
+</script>
+
+</body>
+</html>
